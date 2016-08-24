@@ -15,7 +15,7 @@ setup(
     version=VERSION,
     description='adds Web Services Security'
                 ' PasswordDigest authentication to SUDS',
-    long_description=file(
+    long_description=open(
         os.path.join(
             os.path.dirname(__file__),
             'README.md'
@@ -27,6 +27,6 @@ setup(
     url='http://github.com/suvit/suds-passworddigest',
     zip_safe=False,
     packages=find_packages(exclude=['docs', 'examples', 'tests']),
-    install_requires=['suds'],
+    install_requires=['suds-py3'],
     include_package_data=True,
 )
